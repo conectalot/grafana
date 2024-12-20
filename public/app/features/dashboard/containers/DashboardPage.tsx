@@ -507,16 +507,16 @@ function updateStatePageNavFromProps(props: Props, state: State): State {
   let pageNav = state.pageNav;
   let sectionNav = state.sectionNav;
 
-  if (!pageNav || dashboard.title !== pageNav.text || dashboard.meta.folderUrl !== pageNav.parentItem?.url) {
-    pageNav = {
-      text: dashboard.title,
-      url: locationUtil.getUrlForPartial(props.location, {
-        editview: null,
-        editPanel: null,
-        viewPanel: null,
-      }),
-    };
-  }
+  // if (!pageNav || dashboard.title !== pageNav.text || dashboard.meta.folderUrl !== pageNav.parentItem?.url) {
+  //   pageNav = {
+  //     text: dashboard.title,
+  //     url: locationUtil.getUrlForPartial(props.location, {
+  //       editview: null,
+  //       editPanel: null,
+  //       viewPanel: null,
+  //     }),
+  //   };
+  // }
 
   sectionNav = getNavModel(props.navIndex, ID_PREFIX + dashboard.uid, getNavModel(props.navIndex, 'dashboards/browse'));
 
