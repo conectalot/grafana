@@ -1974,7 +1974,7 @@
       "cancel-snapshot": "",
       "disconnect": "",
       "errored-resource-count": "",
-      "page-loading": "",
+      "page-loading": "Carregando...",
       "rebuild-snapshot": "",
       "snapshot-date": "",
       "snapshot-not-created": "",
