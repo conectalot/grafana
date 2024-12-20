@@ -84,72 +84,72 @@ export const PageToolbar = memo(
 
     return (
       <nav className={mainStyle} aria-label={ariaLabel}>
-        <div className={styles.leftWrapper}>
-          {pageIcon && !onGoBack && (
-            <div className={styles.pageIcon}>
-              <Icon name={pageIcon} size="lg" aria-hidden />
-            </div>
-          )}
-          {onGoBack && (
-            <div className={styles.pageIcon}>
-              <IconButton
-                name="arrow-left"
-                tooltip="Go back (Esc)"
-                tooltipPlacement="bottom"
-                size="xxl"
-                data-testid={selectors.components.BackButton.backArrow}
-                onClick={onGoBack}
-              />
-            </div>
-          )}
-          <nav aria-label="Search links" className={styles.navElement}>
-            {parent && parentHref && (
-              <>
-                <Link
-                  aria-label={`Search dashboard in the ${parent} folder`}
-                  className={cx(styles.titleText, styles.parentLink, styles.titleLink, styles.truncateText)}
-                  href={parentHref}
-                >
-                  {parent} <span className={styles.parentIcon}></span>
-                </Link>
-                {titleHref && (
-                  <span className={cx(styles.titleText, styles.titleDivider)} aria-hidden>
-                    {'/'}
-                  </span>
-                )}
-              </>
-            )}
+        {/*<div className={styles.leftWrapper}>*/}
+        {/*  {pageIcon && !onGoBack && (*/}
+        {/*    <div className={styles.pageIcon}>*/}
+        {/*      <Icon name={pageIcon} size="lg" aria-hidden />*/}
+        {/*    </div>*/}
+        {/*  )}*/}
+        {/*  {onGoBack && (*/}
+        {/*    <div className={styles.pageIcon}>*/}
+        {/*      <IconButton*/}
+        {/*        name="arrow-left"*/}
+        {/*        tooltip="Go back (Esc)"*/}
+        {/*        tooltipPlacement="bottom"*/}
+        {/*        size="xxl"*/}
+        {/*        data-testid={selectors.components.BackButton.backArrow}*/}
+        {/*        onClick={onGoBack}*/}
+        {/*      />*/}
+        {/*    </div>*/}
+        {/*  )}*/}
+        {/*  <nav aria-label="Search links" className={styles.navElement}>*/}
+        {/*    {parent && parentHref && (*/}
+        {/*      <>*/}
+        {/*        <Link*/}
+        {/*          aria-label={`Search dashboard in the ${parent} folder`}*/}
+        {/*          className={cx(styles.titleText, styles.parentLink, styles.titleLink, styles.truncateText)}*/}
+        {/*          href={parentHref}*/}
+        {/*        >*/}
+        {/*          {parent} <span className={styles.parentIcon}></span>*/}
+        {/*        </Link>*/}
+        {/*        {titleHref && (*/}
+        {/*          <span className={cx(styles.titleText, styles.titleDivider)} aria-hidden>*/}
+        {/*            {'/'}*/}
+        {/*          </span>*/}
+        {/*        )}*/}
+        {/*      </>*/}
+        {/*    )}*/}
 
-            {(title || Boolean(leftItems?.length)) && (
-              <div className={styles.titleWrapper}>
-                {title && (
-                  <h1 className={styles.h1Styles}>
-                    {titleHref ? (
-                      <Link
-                        aria-label="Search dashboard by name"
-                        className={cx(styles.titleText, styles.titleLink)}
-                        href={titleHref}
-                      >
-                        {titleEl}
-                      </Link>
-                    ) : (
-                      <div className={styles.titleText}>{titleEl}</div>
-                    )}
-                  </h1>
-                )}
+        {/*    {(title || Boolean(leftItems?.length)) && (*/}
+        {/*      <div className={styles.titleWrapper}>*/}
+        {/*        {title && (*/}
+        {/*          <h1 className={styles.h1Styles}>*/}
+        {/*            {titleHref ? (*/}
+        {/*              <Link*/}
+        {/*                aria-label="Search dashboard by name"*/}
+        {/*                className={cx(styles.titleText, styles.titleLink)}*/}
+        {/*                href={titleHref}*/}
+        {/*              >*/}
+        {/*                {titleEl}*/}
+        {/*              </Link>*/}
+        {/*            ) : (*/}
+        {/*              <div className={styles.titleText}>{titleEl}</div>*/}
+        {/*            )}*/}
+        {/*          </h1>*/}
+        {/*        )}*/}
 
-                {leftItems?.map((child, index) => (
-                  <div
-                    className={cx(styles.leftActionItem, { [styles.forceShowLeftActionItems]: forceShowLeftItems })}
-                    key={index}
-                  >
-                    {child}
-                  </div>
-                ))}
-              </div>
-            )}
-          </nav>
-        </div>
+        {/*        {leftItems?.map((child, index) => (*/}
+        {/*          <div*/}
+        {/*            className={cx(styles.leftActionItem, { [styles.forceShowLeftActionItems]: forceShowLeftItems })}*/}
+        {/*            key={index}*/}
+        {/*          >*/}
+        {/*            {child}*/}
+        {/*          </div>*/}
+        {/*        ))}*/}
+        {/*      </div>*/}
+        {/*    )}*/}
+        {/*  </nav>*/}
+        {/*</div>*/}
         <ToolbarButtonRow alignment={buttonOverflowAlignment}>
           {Children.toArray(children).filter(Boolean)}
         </ToolbarButtonRow>
