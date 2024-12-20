@@ -94,12 +94,12 @@ function PublicDashboardSceneRenderer({ model }: SceneComponentProps<DashboardSc
   return (
     <Page layout={PageLayoutType.Custom} className={styles.page} data-testid={selectors.page}>
       <div className={styles.controls}>
-        <Stack alignItems="center">
-          <div className={styles.iconTitle}>
-            <Icon name="grafana" size="lg" aria-hidden />
-          </div>
-          <span className={styles.title}>{title}</span>
-        </Stack>
+        {/*<Stack alignItems="center">*/}
+        {/*  <div className={styles.iconTitle}>*/}
+        {/*    <Icon name="grafana" size="lg" aria-hidden />*/}
+        {/*  </div>*/}
+        {/*  <span className={styles.title}>{title}</span>*/}
+        {/*</Stack>*/}
         {!hideTimeControls && (
           <Stack>
             <timePicker.Component model={timePicker} />
