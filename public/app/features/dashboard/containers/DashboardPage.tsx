@@ -437,14 +437,14 @@ export class UnthemedDashboardPage extends PureComponent<Props, State> {
         >
           {showToolbar && (
             <header data-testid={selectors.pages.Dashboard.DashNav.navV2}>
-              <DashNav
-                dashboard={dashboard}
-                title={dashboard.title}
-                folderTitle={dashboard.meta.folderTitle}
-                isFullscreen={!!viewPanel}
-                kioskMode={kioskMode}
-                hideTimePicker={dashboard.timepicker.hidden}
-              />
+              {/*<DashNav*/}
+              {/*  dashboard={dashboard}*/}
+              {/*  title={dashboard.title}*/}
+              {/*  folderTitle={dashboard.meta.folderTitle}*/}
+              {/*  isFullscreen={!!viewPanel}*/}
+              {/*  kioskMode={kioskMode}*/}
+              {/*  hideTimePicker={dashboard.timepicker.hidden}*/}
+              {/*/>*/}
             </header>
           )}
           <DashboardPrompt dashboard={dashboard} />
