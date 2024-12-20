@@ -110,14 +110,14 @@ const PublicDashboardPage = (props: Props) => {
 
   return (
     <Page pageNav={{ text: "Monitoramento Marketplace - Bolões" }} layout={PageLayoutType.Custom} data-testid={selectors.page}>
-      <Toolbar dashboard={dashboard} />
+      {/*<Toolbar dashboard={dashboard} />*/}
       {dashboardState.initError && <DashboardFailed initError={dashboardState.initError} />}
       <div className={styles.gridContainer}>
         <DashboardGrid dashboard={dashboard} isEditable={false} viewPanel={null} editPanel={null} hidePanelMenus />
       </div>
-      <div className={styles.footer}>
-        <PublicDashboardFooter />
-      </div>
+      {/*<div className={styles.footer}>*/}
+      {/*  <PublicDashboardFooter />*/}
+      {/*</div>*/}
     </Page>
   );
 };
