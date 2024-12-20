@@ -58,16 +58,16 @@ export const Page: PageType = ({
           onSetScrollRef={onSetScrollRef}
         >
           <div className={styles.pageInner}>
-            {pageHeaderNav && (
-              // <PageHeader
-              //   actions={actions}
-              //   onEditTitle={onEditTitle}
-              //   navItem={pageHeaderNav}
-              //   renderTitle={renderTitle}
-              //   info={info}
-              //   subTitle={subTitle}
-              // />
-            )}
+            {/*{pageHeaderNav && (*/}
+            {/*  <PageHeader*/}
+            {/*    actions={actions}*/}
+            {/*    onEditTitle={onEditTitle}*/}
+            {/*    navItem={pageHeaderNav}*/}
+            {/*    renderTitle={renderTitle}*/}
+            {/*    info={info}*/}
+            {/*    subTitle={subTitle}*/}
+            {/*  />*/}
+            {/*)}*/}
             {pageNav && pageNav.children && <PageTabs navItem={pageNav} />}
             <div className={styles.pageContent}>{children}</div>
           </div>
