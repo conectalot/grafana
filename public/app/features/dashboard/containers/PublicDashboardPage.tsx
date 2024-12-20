@@ -45,7 +45,7 @@ const Toolbar = ({ dashboard }: { dashboard: DashboardModel }) => {
   return (
     <PageToolbar
       title="Monitoramento Marketplace"
-      pageIcon=undefined
+      pageIcon={undefined}
       buttonOverflowAlignment="right"
     >
       {!dashboard.timepicker.hidden && (
